@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" />
+        <title> Визитка </title>
+    </head>
+   
+    <body> 
+        <div class="container">
+            <div class="info">
+                <div class="card bg-red">
+                    <img src="images/avatar.jpg" class="avatar" />
+                    <h2>О себе</h2>
+                    <p>Герейханов Ильяс</p>
+                    <p>18 лет</p>
+                    <p>студент 1 курса группы БВТ2301 МТУСИ</p>
+                </div>
+            </div>
+            <hr>
+            <a href="#box" onclick="openbox('box'); return false"><h2>Лабораторные работы</h2></a>
+            <div class="card bg-yellow" id="box" style="display: none;">
+                <ul>
+                    <li><a href="https://github.com/Ilyaszv/lab_1/blob/main/lab_1.py" target="_blank" class="show_button" >Первая</a></li>
+                    <li><a href="https://github.com/Ilyaszv/lab_2/blob/main/main.py" target="_blank" class="show_button">Вторая</a></li>
+                    <li><a href="https://github.com/Ilyaszv/lab_3/blob/main/index.html" target="_blank" class="show_button">Третья</a></li>
+                </ul>
+            </div>
+            <hr>
+            <a href="#box1" onclick="openbox1('box1'); return false"><h2>Ссылки</h2></a>
+            <div class="card bg-green" id="box1" style="display: none;">
+                <ul>
+                    <li><a href="https://t.me/ilkaiu" target="_blank" class="show_button" >Telegram</a></li>
+                    <li><a href="https://vk.com/id796127769" target="_blank" class="show_button">VK</a></li>
+                    <li><a href="https://github.com/Ilyavsz" target="_blank" class="show_button">GitHub</a></li>
+                </ul>
+            </div>  
+            <hr>
+
+        </div>
+        <div style="margin-bottom: 200px;;"></div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
